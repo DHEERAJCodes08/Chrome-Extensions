@@ -1,0 +1,9 @@
+#downloadBtn{
+    width: 100px;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+}

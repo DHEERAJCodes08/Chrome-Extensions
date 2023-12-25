@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube Video Downloader",
+    "version": "1.0",
+    "permissions": ["activeTab", "downloads" , "tabs","storage"],
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "Removal-157.png",
+        "48": "Removal-157.png",
+        "128": "Removal-157.png"
+      }
+    }
+  }
+  
